@@ -1,0 +1,13 @@
+package co.grandcircus.PizzaAppPart1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class PizzaAppController {
+
+	@RequestMapping("PizzaApp")
+	public String showPizzaApp(){
+		return "PizzaApp";
+	}
+}

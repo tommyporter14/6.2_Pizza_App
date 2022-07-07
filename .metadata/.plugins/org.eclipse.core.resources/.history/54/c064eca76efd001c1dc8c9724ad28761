@@ -1,0 +1,73 @@
+body{
+	background-color: red;
+}
+
+.header{
+	padding: 60px;
+	text-align: center;
+	background: green;
+	color: white;
+	font-size: 30px;
+}
+
+.specialty{
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+	background: green;
+}
+
+.specialty h3{
+	margin-left: 200px;
+	color: white;
+}
+
+.specialty ul{
+	list-style:disc;
+	margin-left: 190px;
+}
+
+.custom{
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+	background: green;
+}
+
+.custom h3{
+	margin-left: 200px;
+	color: white;
+}
+
+.custom ul{
+	list-style:disc;
+	margin-left: 190px;
+}
+
+.review{
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+	background: green;
+}
+
+.review h3{
+	margin-left: 200px;
+	color: white;
+}
+
+.review ul{
+	list-style:disc;
+	margin-left: 190px;
+}
+
+.speciltypizzapage{
+	padding: 30px;
+	margin-top: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+	background: green;
+}

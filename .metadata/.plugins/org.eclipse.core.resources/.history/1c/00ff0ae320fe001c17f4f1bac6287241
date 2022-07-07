@@ -1,0 +1,40 @@
+package co.grandcircus.PizzaAppPart1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class PizzaAppController {
+
+	@RequestMapping("PizzaApp")
+	public String showPizzaApp(){
+		return "PizzaApp";
+	}
+	
+	@RequestMapping("specialty")
+	public String showSpecialty(@RequestParam String type, @RequestParam String price, Model model) {
+		model.addAttribute("type", type);
+		model.addAttribute("price", price);
+		
+		return "DisplaySpecialty";
+	}
+	
+	@RequestMapping("review")
+	public String showReview() {
+		return "DisplayReview";
+	}
+
+	@PostMapping("/yourreview")
+	public String YourReview(@RequestParam String name,
+						@RequestParam String comment,
+						@RequestParam int rating,
+						Model model) {
+		model.addAttribute("name", name);
+		model.addAttribute("comment", comment);
+		model.addAttribute("rating", rating);
+		return "YourReview";
+	}
+}

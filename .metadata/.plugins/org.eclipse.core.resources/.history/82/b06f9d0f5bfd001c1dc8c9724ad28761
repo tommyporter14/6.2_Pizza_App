@@ -1,0 +1,35 @@
+body{
+	background-color: red;
+}
+
+.header{
+	padding: 60px;
+	text-align: center;
+	background: green;
+	color: white;
+	font-size: 30px;
+}
+
+.specialty{
+	padding: 30px;
+	margin-top: 60px;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin: 0 auto;
+	text-align: center;
+	background: green;
+	color: white;
+	
+}
+
+.specialty ul{
+	list-style: none;
+}
+
+.custom{
+
+}
+
+.review{
+
+}
