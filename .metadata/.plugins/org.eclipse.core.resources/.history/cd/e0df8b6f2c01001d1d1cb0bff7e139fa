@@ -19,7 +19,7 @@
 			<option value="medium">medium</option>
 			<option value="large">large</option>
 		</select>
-		
+<!-- added min and max for validation of topping count, whole numbers are only choice in my form -->
 		Toppings: <input min=0 max=10 name="toppingCount" type="number" onkeydown="return event.keyCode !== 190"/>
 		Gluten Free: <input name="glutenFree" type="checkbox"/>
 		Special Instructions: <input name="special" type="text"/>
