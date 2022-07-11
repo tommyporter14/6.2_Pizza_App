@@ -14,12 +14,13 @@
 		<h1>Fill Out The Form Below To Make A Custom Pizza!</h1>
 		<p>*must have at least 1 toping*</p>
 	<form class = "orderform" action="custom" method="POST">
-		Size*: <select name="size">
+		Size: <select name="size">
 			<option value="small">small</option>
 			<option value="medium">medium</option>
 			<option value="large">large</option>
 		</select>
-		Toppings*: <input name="toppingCount" type="number"/>
+<!-- added min and max for validation of topping count, whole numbers are only choice in my form -->
+		Toppings: <input min=0 max=10 name="toppingCount" type="number"/>
 		Gluten Free: <input name="glutenFree" type="checkbox"/>
 		Special Instructions: <input name="special" type="text"/>
 		<input type="submit" class="button" />

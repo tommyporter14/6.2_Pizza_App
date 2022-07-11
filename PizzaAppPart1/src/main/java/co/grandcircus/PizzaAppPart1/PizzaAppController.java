@@ -36,6 +36,15 @@ public class PizzaAppController {
 						@RequestParam String comment,
 						@RequestParam int rating,
 						Model model) {
+		
+		if(name.length() == 0) {
+			name = "Error, need to fill out name feild";
+		}
+		if(comment.length() < 5) {
+			comment = "Error, comment feild must have at least 5 characters";
+		}
+		//didn't add validation for rating because more form forces you to select a rating, automatically starting at 5 stars
+		
 		model.addAttribute("name", name);
 		model.addAttribute("comment", comment);
 		model.addAttribute("rating", rating);
@@ -60,6 +69,7 @@ public class PizzaAppController {
 			glutenFreeString = "no";
 		}
 		model.addAttribute("glutenFreeString", glutenFreeString);
+		
 		double price = 0.0;
 		switch (size) {
 		case ("small"):
